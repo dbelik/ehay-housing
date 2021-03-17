@@ -4,21 +4,40 @@
     border: 2px solid $primary;
     border-radius: 7px;
     font-weight: bold;
+    text-decoration: none !important;
+    outline: none;
+    transition: color .1s, background-color .1s, border-color .1s;
 }
 
 .primary-border-button {
     padding: 10px 22px;
     color: $primary;
+
+    &:hover, &:focus {
+        color: $white;
+        background: $primary;
+    }
 }
 
 .white-border-button {
     padding: 13px 36px;
     border-color: $white;
     color: $white;
+
+    &:hover, &:focus {
+        color: $black;
+        background: $white;
+    }
 }
 
 .primary-button {
     background-color: $primary;
     color: $white;
     padding: 15px 20px;
+
+    &:hover, &:focus {
+        color: $white;
+        background: #1253b4;
+        border-color: #1253b4;
+    }
 }
