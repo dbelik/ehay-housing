@@ -1,0 +1,9 @@
+@import 'config/config.scss';
+
+p {
+  color: $primary;
+ 
+  &:hover {
+    color: $secondary;
+  }
+}
