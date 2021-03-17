@@ -1,0 +1,24 @@
+.primary-border-button,
+.white-border-button,
+.primary-button {
+    border: 2px solid $primary;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.primary-border-button {
+    padding: 10px 22px;
+    color: $primary;
+}
+
+.white-border-button {
+    padding: 13px 36px;
+    border-color: $white;
+    color: $white;
+}
+
+.primary-button {
+    background-color: $primary;
+    color: $white;
+    padding: 15px 20px;
+}

@@ -7,7 +7,116 @@
     <title>Ehya</title>
   </head>
   <body>
-      <div id="root">
+    <nav class="h-navbar fixed-top w-screen">
+      <div
+        class="content-container d-flex justify-content-between align-items-center h-100"
+      >
+        <img src="/assets/images/icons/ehya.svg" alt="Ehya" />
+
+        <ul
+          class="d-flex align-items-center justify-content-end list-style-none mb-0"
+        >
+          <li><a class="font-weight-bold mr-4" href="/">Home</a></li>
+          <li><a class="font-weight-bold mr-4 ml-3" href="/">Landing</a></li>
+          <li><a class="font-weight-bold mr-4 ml-3" href="/">Pages</a></li>
+          <li><a class="font-weight-bold mr-4 ml-3" href="/">Docs</a></li>
+          <li><a class="font-weight-bold mr-4 ml-3" href="/">Help</a></li>
+          <li><a class="primary-border-button ml-3" href="/">Get it now</a></li>
+        </ul>
       </div>
+    </nav>
+
+    <section id="intro-section">
+      <div class="text-white h-100">
+        <div
+          class="content-container p-0 row align-items-end justify-content-between"
+        >
+          <div class="h-100 w-100 col-7 d-flex flex-column align-items-start justify-content-between">
+            <!-- Leave it empty -->
+            <div></div>
+
+            <div class="h-100 d-flex flex-column justify-content-center align-items-start">
+              <h1 class="mt-4">Let’s your home work</h1>
+              <p class="mb-4">
+                No matter what kind of place you have to share, rent out your
+                house, apartment or room & earn extra money quickly.
+              </p>
+              <a href="/" class="white-border-button">
+                Learn more <i class="fas fa-arrow-right text-14 ml-8"></i>
+              </a>
+            </div>
+
+            <div class="mb-5 d-flex align-items-center">
+              <div class="d-flex align-items-center">
+                <div class="check-icon"><i class="fas fa-check fa-1x"></i></div>
+                <span class="ml-2 p3 font-weight-bold">Charge what you want</span>
+              </div>
+              
+              <div class="d-flex align-items-center ml-3">
+                <div class="check-icon"><i class="fas fa-check fa-1x"></i></div>
+                <span class="ml-2 p3 font-weight-bold">Get paid quickly</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="col-5 bg-white text-dark">
+            <h3>Earn extra money</h3>
+            <p class="p2">Get an estimate price for space you rent</p>
+
+            <div class="w-100">
+              <input type="text" placeholder="Enter your location" />
+              <label class="d-none">
+                <i class="fas fa-map-marker-alt"></i>
+                Enter your location
+              </label>
+            </div>
+
+            <div class="row py-3">
+              <div class="dropdown text-grey col-8">
+                <button
+                  class="btn btn-secondary dropdown-toggle text-dark font-weight-bold w-100 d-flex align-items-center justify-content-between"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Entire place
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <div class="dropdown text-grey col-4 pl-0">
+                <button
+                  class="btn btn-secondary dropdown-toggle text-dark font-weight-bold w-100 py-2 d-flex align-items-center justify-content-between"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  3 guests
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+
+            <p class="p2 mb-2">Monthly potential</p>
+            <p class="text-big font-weight-bold line-height-1 mb-4">$6,850</p>
+
+            <a class="primary-button d-inline-block w-100 text-center" href="/"
+              >Get Started</a
+            >
+          </form>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

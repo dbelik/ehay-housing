@@ -1,0 +1,16 @@
+$navbar-height: 100px;
+
+.list-style-none {
+  list-style-type: none;
+}
+
+.h-navbar {
+    height: $navbar-height;
+}
+
+.w-screen { width: 100vw; }
+
+.p2 { font-size: $p2; }
+.p3 { font-size: $p3; }
+.text-big { font-size: $h1; }
+.line-height-1 { line-height: 1; }

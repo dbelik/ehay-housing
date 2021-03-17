@@ -3,16 +3,16 @@
 @import "fonts/open-sans.scss";
 
 // Define sizes
-$h1: 56pt;
+$h1: 3rem;
 $h2: 40pt;
-$h3: 32pt;
+$h3: 1.5rem;
 $h4: 24pt;
 $h5: 20pt;
 $h6: 16pt;
 
-$p1: 20pt;
-$p2: 16pt;
-$p3: 14pt;
+$p1: 1.25rem;
+$p2: 1rem;
+$p3: .9rem;
 
 $icon: 18pt;
 
@@ -25,45 +25,3 @@ $h6_spacing: 0.5;
 $p1_spacing: 0.5;
 $p2_spacing: 0;
 $p3_spacing: -0.5;
-
-// Set sizes
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "HK Grotesk", sans-serif;
-  font-weight: 700;
-}
-
-h1 {
-  font-size: $h1;
-  letter-spacing: $h1_spacing;
-}
-h2 {
-  font-size: $h2;
-  letter-spacing: $h2_spacing;
-}
-h3 {
-  font-size: $h3;
-  letter-spacing: $h3_spacing;
-}
-h4 {
-  font-size: $h4;
-  letter-spacing: $h4_spacing;
-}
-h5 {
-  font-size: $h5;
-  letter-spacing: $h5_spacing;
-}
-h6 {
-  font-size: $h6;
-  letter-spacing: $h6_spacing;
-}
-
-p {
-  font-size: $p1;
-  letter-spacing: $p1_spacing;
-  font-family: "Open Sans", sans-serif;
-}
