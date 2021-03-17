@@ -1,40 +1,61 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
+// Plugins
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+
+// Config
+const mode = "development";
+const target = "web";
+const dist = "dist";
+
 module.exports = {
-  mode: "production",
+  mode: mode,
+  target: target,
+
   entry: {
     home: "./src/home.js",
   },
-
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.join(__dirname, dist),
     filename: "[name].js",
   },
 
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "resolve-url-loader", "sass-loader"],
-      },
-      {
         test: /\.js$/,
         use: "babel-loader",
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|woff|woff2|eot|ttf|otf)$/,
-        exclude: /node_modules/,
-        use: "file-loader",
+        test: /\.scss$/,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "resolve-url-loader", "sass-loader",],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        type: "asset",
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset',
+      },
+      {
+        test: /\.html$/,
+        loader: 'html-loader'
       },
     ],
   },
 
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
+    contentBase: path.join(__dirname, dist),
     compress: true,
-    port: 9000,
+    port: 3000,
   },
 
-  plugins: [new HtmlWebpackPlugin({ template: "./pages/home.html" })],
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({ template: './pages/home.html' }),
+    new MiniCssExtractPlugin({})
+  ],
 };
