@@ -8,13 +8,29 @@ $navbar-height: 100px;
   height: $navbar-height;
 }
 
-.w-screen { width: 100vw; }
+.w-screen {
+  width: 100vw;
+}
 
-.p2 { font-size: $p2; line-height: 2.2; }
-.p3 { font-size: $p3; }
-.text-big { font-size: $h1; }
-.line-height-1 { line-height: 1; }
-.box-shadow-none { box-shadow: none !important; }
+.p2 {
+  font-size: $p2;
+  line-height: 2.2;
+}
+.p3 {
+  font-size: $p3;
+}
+.text-big {
+  font-size: $h1;
+}
+.line-height-1 {
+  line-height: 1;
+}
+.line-height-1_5 {
+  line-height: 1.5;
+}
+.box-shadow-none {
+  box-shadow: none !important;
+}
 
 .success-message {
   background-color: $success-light;
@@ -32,32 +48,14 @@ $navbar-height: 100px;
   }
 
   .item-number {
-    min-width: 35px;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $primary;
-    border-radius: 50%;
-    color: $white;
-    position: relative;
-    box-shadow: 0 10px 15px 0 rgba(21, 37, 71, .15);
     margin-right: 30px;
-  
-    &::after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0; left: 0;
-      transform: translate(-7.5px, -7.5px);
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      border: 1px solid $primary-light;
-    }
   }
 }
 
 blockquote.quote {
   font-size: 40px;
+}
+
+.rounded-md {
+  border-radius: 20px;
 }

@@ -2,6 +2,7 @@
 
 @import '../components/containers.scss';
 @import '../components/buttons.scss';
+@import '../components/icons.scss';
 
 #intro-section {
     height: 560px;
@@ -11,7 +12,6 @@
         margin: auto;
         background: linear-gradient(248deg, rgba(53, 109, 143, 0.5), rgba(24, 59, 86, 0.75)), url("/assets/images/pages/home/intro-bg.png") no-repeat center;
         background-size: cover;
-        border-radius: 20px;
         padding: 0px 10px;
     }
 
@@ -83,4 +83,36 @@
         border-radius: .5rem;
         height: 460px;
     }
+}
+
+#our-features {
+    margin-top: 140px;
+    background: linear-gradient(to bottom, #f8fbff, rgba(250, 251, 251, 0));
+    padding: 140px 15px 0;
+
+    .content-container {
+        border-bottom: 1px solid $grey-light-light;
+        padding-bottom: 160px;
+    }
+
+    #our-features-header {
+        margin-bottom: 104px;
+    }
+
+    #our-features-img {
+        width: 360px;
+    }
+
+    #our-features-payment {
+        margin-top: 105px;
+    }
+
+    #our-features-payment-img {
+        width: 326px;
+        margin-right: 95px;
+    }
+}
+
+#articles-section {
+    height: 1000px;
 }
