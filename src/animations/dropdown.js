@@ -9,8 +9,6 @@ function getElements(element) {
 }
 
 function showDropdown(element, timelineStop, timelineShow) {
-    console.log('show')
-    // Prepare to start animation
     timelineStop.pause();
     timelineStop.clear();
     timelineShow.play();
@@ -37,7 +35,6 @@ function showDropdown(element, timelineStop, timelineShow) {
 }
 
 function closeDropdown(element, timelineStop, timelineShow) {
-    console.log('stop')
     timelineShow.pause();
     timelineShow.clear();
     timelineStop.play();
