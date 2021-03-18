@@ -1,11 +1,13 @@
 .rounded-icon,
 .rounded-icon-success,
-.rounded-icon-primary {
+.rounded-icon-primary,
+.rounded-icon-grey {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   position: relative;
+  transition: background-color .1s;
 }
 
 .rounded-icon {
@@ -45,4 +47,17 @@
   color: $primary;
   font-size: 16px;
   padding-top: 2px;
+}
+
+.rounded-icon-grey {
+  width: 45px;
+  height: 45px;
+  background-color: $grey-light-light;
+  color: $grey;
+  font-size: 18px;
+  padding-top: 2px;
+
+  &:hover, &:focus {
+    background-color: $grey-light;
+  }
 }
