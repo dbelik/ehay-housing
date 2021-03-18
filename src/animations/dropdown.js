@@ -17,7 +17,7 @@ function showDropdown(element, timelineStop, timelineShow) {
 
     timelineShow.to(elements.arrow, {
         rotate: 180,
-        duration: .2
+        duration: .1
     });
     
     timelineShow.to(elements.itemsContainer, {
@@ -26,11 +26,11 @@ function showDropdown(element, timelineStop, timelineShow) {
     });
     timelineShow.to(elements.itemsContainer, {
         height: "auto",
-        duration: .2
+        duration: .1
     });
     timelineShow.to(elements.items, {
         opacity: 1,
-        duration: .2,
+        duration: .1,
     });
 }
 
@@ -43,11 +43,11 @@ function closeDropdown(element, timelineStop, timelineShow) {
     
     timelineStop.to(elements.items, {
         opacity: 0,
-        duration: .2,
+        duration: .1,
     });
     timelineStop.to(elements.itemsContainer, {
         height: "0",
-        duration: .2,
+        duration: .1,
         paddingTop: "0",
         paddingBottom: "0",
     });
@@ -57,7 +57,7 @@ function closeDropdown(element, timelineStop, timelineShow) {
     });
     timelineStop.to(elements.arrow, {
         rotate: 0,
-        duration: .2,
+        duration: .1,
     });
 }
 
