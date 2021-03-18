@@ -206,19 +206,20 @@
       </div>
     </nav>
 
+    <!-- Content starts here -->
     <section id="intro-section">
       <div class="text-white h-100 rounded-md">
         <div
-          class="content-container p-0 row align-items-end justify-content-between"
+          class="content-container p-0 row align-items-end justify-content-center"
         >
           <div
-            class="h-100 w-100 col-7 d-flex flex-column align-items-start justify-content-between"
+            class="h-100 w-100 col-lg-12 col-xl-7 d-flex flex-column align-items-xl-start align-items-center justify-content-between"
           >
             <!-- Leave it empty -->
             <div></div>
 
             <div
-              class="h-100 d-flex flex-column justify-content-center align-items-start"
+              class="h-100 d-flex flex-column justify-content-center align-items-xl-start align-items-center col-8 col-xl-12 text-center text-xl-left"
             >
               <h1 class="mt-4">Let’s your home work</h1>
               <p class="mb-4">
@@ -230,7 +231,7 @@
               </a>
             </div>
 
-            <div class="mb-5 d-flex align-items-center">
+            <div id="intro-section-icons" class="mb-5 d-flex align-items-center">
               <div class="d-flex align-items-center">
                 <div class="check-icon"><i class="fas fa-check fa-1x"></i></div>
                 <span class="ml-2 p3 font-weight-bold"
@@ -245,7 +246,7 @@
             </div>
           </div>
 
-          <form class="col-5 bg-white text-dark">
+          <form class="col-xl-5 bg-white text-dark">
             <h3>Earn extra money</h3>
             <p class="p2">Get an estimate price for space you rent</p>
 
@@ -299,13 +300,18 @@
       </div>
     </section>
 
-    <section class="content-container row" id="intro-bottom-section">
-      <div class="col-4">
+    <section class="content-container row text-center text-xl-left" id="intro-bottom-section">
+      <div class="col-12 col-xl-4">
         <p class="success-message">GET PAID QUICKLY</p>
         <h2>Let’s rent out your home, enjoy!</h2>
       </div>
-      <div class="col-4 d-flex align-items-start">
-        <img id="home-icon" src="/assets/images/icons/home.svg" alt="Home" />
+      <div class="col-6 col-xl-4 d-flex align-items-xl-start align-items-center flex-column flex-xl-row">
+        <img
+          class="mb-xl-4 mb-2 mb-xl-0" 
+          id="home-icon" 
+          src="/assets/images/icons/home.svg" 
+          alt="Home" 
+        />
         <div class="ml-4">
           <h3>Put your home to work</h3>
           <p>
@@ -314,8 +320,9 @@
           </p>
         </div>
       </div>
-      <div class="col-4 d-flex align-items-start">
+      <div class="col-6 col-xl-4 d-flex align-items-xl-start align-items-center flex-column flex-xl-row">
         <img
+          class="mb-xl-4 mb-2 mb-xl-0"
           id="user-approve-icon"
           src="/assets/images/icons/user-approve.svg"
           alt="Screen guests"
@@ -387,8 +394,8 @@
     </section>
 
     <section id="quote-section">
-      <div class="content-container row">
-        <div class="col-6 my-4">
+      <div class="content-container row text-xl-left text-center d-flex flex-column flex-xl-row align-items-center">
+        <div id="quote-blockquote-container" class="col-xl-6 col-8 my-4">
           <i class="text-success fas fa-quote-left fa-3x mb-4"></i>
           <blockquote class="quote">
             Hosting has helped me pay for a new living room and other upgrades.
@@ -398,7 +405,7 @@
             Daniel hosts in Yogyakarta to earn extra money
           </p>
         </div>
-        <div class="col-6 d-flex justify-content-center align-items-center">
+        <div class="col-xl-6 col-12 d-flex justify-content-center align-items-center">
           <img
             id="quote-section-author"
             src="/assets/images/pages/home/author.png"
@@ -510,7 +517,7 @@
 
     <section id="articles-section">
       <div class="content-container">
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-xl-5 mb-4">
           <div class="col-6 text-center">
             <p class="primary-message">OUR BLOG</p>
             <h2>Don’t miss our recent articles</h2>
@@ -521,8 +528,8 @@
           </div>
         </div>
 
-        <div class="row articles">
-          <div class="col-4">
+        <div class="row articles justify-content-center">
+          <div class="col-xl-4 col-6">
             <div id="article-1" class="rounded-sm w-100 h-100">
               <div class="article-background">
                 <img
@@ -545,7 +552,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-xl-4 col-6">
             <div
               id="article-2"
               class="rounded-sm d-flex flex-column justify-content-end w-100 h-100"
@@ -558,7 +565,7 @@
               <h3 class="m-0">Tips: Host Preparedness for Physical Activities</h3>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-4 d-xl-block d-none">
             <div
               id="article-3"
               class="rounded-sm text-center d-flex flex-column justify-content-between align-items-center w-100 h-100"
@@ -586,23 +593,23 @@
         </div>
       </div>
 
-      <ul class="row list-style-none text-center">
-        <li class="col-3 d-flex flex-column align-items-center">
+      <ul class="row justify-content-center list-style-none text-center">
+        <li class="col-xl-3 col-5 d-flex flex-column align-items-center">
           <span class="rounded-icon-primary"><i class="fas fa-fire"></i></span>
           <h2>3.9M</h2>
           <p>Hosts on our platform</p>
         </li>
-        <li class="col-3 d-flex flex-column align-items-center">
+        <li class="col-xl-3 col-5 d-flex flex-column align-items-center">
           <span class="rounded-icon-primary"><i class="fas fa-user-check"></i></span>
           <h2>600K</h2>
           <p>Avarage stays each night</p>
         </li>
-        <li class="col-3 d-flex flex-column align-items-center">
+        <li class="col-xl-3 col-5 d-flex flex-column align-items-center">
           <span class="rounded-icon-primary"><i class="fas fa-flag"></i></span>
           <h2>9K</h2>
           <p>New hosts per month</p>
         </li>
-        <li class="col-3 d-flex flex-column align-items-center">
+        <li class="col-xl-3 col-5 d-flex flex-column align-items-center">
           <span class="rounded-icon-primary"><i class="fas fa-smile"></i></span>
           <h2>6.4M</h2>
           <p>Total happy guests</p>
@@ -631,45 +638,47 @@
           </ul>
         </div>
 
-        <div class="col-2">
-          <h4 class="mb-4">Product</h4>
-          <ul class="list-style-none pt-1">
-            <li class="mb-4"><a href="/">Landingpage</a></li>
-            <li class="mb-4"><a href="/">Features</a></li>
-            <li class="mb-4"><a href="/">Documentation</a></li>
-            <li class="mb-4"><a href="/">Referral Program</a></li>
-            <li><a href="/">Pricing</a></li>
-          </ul>
-        </div>
+        <div class="col-8 row">
+          <div class="col-xl-3 col-6 mb-xl-0 mb-5">
+            <h4 class="mb-4">Product</h4>
+            <ul class="list-style-none pt-1">
+              <li class="mb-4"><a href="/">Landingpage</a></li>
+              <li class="mb-4"><a href="/">Features</a></li>
+              <li class="mb-4"><a href="/">Documentation</a></li>
+              <li class="mb-4"><a href="/">Referral Program</a></li>
+              <li><a href="/">Pricing</a></li>
+            </ul>
+          </div>
 
-        <div class="col-2">
-          <h4 class="mb-4">Services</h4>
-          <ul class="list-style-none pt-1">
-            <li class="mb-4"><a href="/">Documentation</a></li>
-            <li class="mb-4"><a href="/">Design</a></li>
-            <li class="mb-4"><a href="/">Themes</a></li>
-            <li class="mb-4"><a href="/">Illustrations</a></li>
-            <li class="mb-4"><a href="/">UI Kit</a></li>
-          </ul>
-        </div>
+          <div class="col-xl-3 col-6 mb-xl-0 mb-5">
+            <h4 class="mb-4">Services</h4>
+            <ul class="list-style-none pt-1">
+              <li class="mb-4"><a href="/">Documentation</a></li>
+              <li class="mb-4"><a href="/">Design</a></li>
+              <li class="mb-4"><a href="/">Themes</a></li>
+              <li class="mb-4"><a href="/">Illustrations</a></li>
+              <li class="mb-4"><a href="/">UI Kit</a></li>
+            </ul>
+          </div>
 
-        <div class="col-2">
-          <h4 class="mb-4">Company</h4>
-          <ul class="list-style-none pt-1">
-            <li class="mb-4"><a href="/">About</a></li>
-            <li class="mb-4"><a href="/">Terms</a></li>
-            <li class="mb-4"><a href="/">Privacy Policy</a></li>
-            <li class="mb-4"><a href="/">Careers</a></li>
-          </ul>
-        </div>
+          <div class="col-xl-3 col-6">
+            <h4 class="mb-4">Company</h4>
+            <ul class="list-style-none pt-1">
+              <li class="mb-4"><a href="/">About</a></li>
+              <li class="mb-4"><a href="/">Terms</a></li>
+              <li class="mb-4"><a href="/">Privacy Policy</a></li>
+              <li class="mb-4"><a href="/">Careers</a></li>
+            </ul>
+          </div>
 
-        <div class="col-2">
-          <h4 class="mb-4">More</h4>
-          <ul class="list-style-none pt-1">
-            <li class="mb-4"><a href="/">Documentation</a></li>
-            <li class="mb-4"><a href="/">License</a></li>
-            <li class="mb-4"><a href="/">Changelog</a></li>
-          </ul>
+          <div class="col-xl-3 col-6">
+            <h4 class="mb-4">More</h4>
+            <ul class="list-style-none pt-1">
+              <li class="mb-4"><a href="/">Documentation</a></li>
+              <li class="mb-4"><a href="/">License</a></li>
+              <li class="mb-4"><a href="/">Changelog</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 

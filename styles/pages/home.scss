@@ -7,6 +7,7 @@
 
 #intro-section {
   height: 560px;
+  padding: 0px 10px;
 
   > div {
     max-width: 1340px;
@@ -134,6 +135,7 @@
 
     > div {
       height: 515px;
+      max-width: 480px;
 
       > div {
         padding: 30px;
@@ -184,25 +186,99 @@
 }
 
 #hosts-section {
-    margin-top: 150px;
+  margin-top: 150px;
 
-    &-header {
-        margin-bottom: 45px;
-    }
+  &-header {
+    margin-bottom: 45px;
+  }
 
-    .rounded-icon-primary {
-        margin-bottom: 26px;
-    }
+  .rounded-icon-primary {
+    margin-bottom: 26px;
+  }
 
-    h2 {
-        margin-bottom: 10px;
-    }
+  h2 {
+    margin-bottom: 10px;
+  }
 }
 
 #outline-section {
-    height: 416px;
-    background: url('/assets/images/pages/home/outline-bg.png') no-repeat center;
-    background-size: cover;
-    margin-top: 125px;
-    padding: 0px 80px;
+  height: 416px;
+  background: url("/assets/images/pages/home/outline-bg.png") no-repeat center;
+  background-size: cover;
+  margin-top: 125px;
+  padding: 0px 80px;
+}
+
+// Responsive design
+@media (max-width: 1199px) {
+  #intro-section {
+    margin-bottom: 260px;
+
+    form {
+      margin-top: -100px;
+    }
+
+    #intro-section-icons {
+      margin-bottom: 150px !important;
+    }
+  }
+
+  #intro-bottom-section {
+    padding: 180px 0 62px;
+
+    > div:nth-child(2),
+    > div:nth-child(3) {
+      margin-top: 42px;
+    }
+  }
+
+  #housing-steps-section {
+    padding: 77px 0 145px;
+  }
+
+  #quote-section  {
+    font-size: 14px;
+
+    #quote-section-author {
+      height: 320px;
+    }
+
+    #quote-blockquote-container {
+      margin-bottom: 42px !important;
+
+      blockquote {
+        margin-bottom: 7px;;
+      }
+    }
+  }
+
+  #our-features {
+    margin-top: 86px;
+    padding-top: 80px;
+
+    .content-container {
+      padding-bottom: 70px;
+    }
+
+    #our-features-header {
+      margin-bottom: 35px;
+    }
+
+    #our-features-payment {
+      margin-top: 25px;
+    }
+  }
+
+  #articles-section {
+    padding-top: 90px;
+  }
+
+  #hosts-section {
+    margin-top: 120px;
+  }
+
+  #outline-section {
+    margin-top: 110px;
+    height: 385px;
+  }
 }
