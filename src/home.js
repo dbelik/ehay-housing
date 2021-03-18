@@ -9,3 +9,6 @@ import('@fortawesome/fontawesome-free/js/brands')
 
 // Load bootstrap
 import 'bootstrap'
+
+// Load common scripts
+import './common.js'
