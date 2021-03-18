@@ -1,6 +1,8 @@
 # Ehay housing
 Ehay housing home page
 
+![Home page](/docs/assets/home.png)
+
 ## Getting started
 ### Installation
 Clone repository via ```https://github.com/dbelik/ehay-housing.git```.
