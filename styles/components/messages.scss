@@ -1,0 +1,24 @@
+.success-message,
+.primary-message,
+.success-white-message {
+    display: inline-block;
+    font-size: $p3;
+    border-radius: 1rem;
+    padding: 5px 15px;
+    font-weight: 600;
+}
+
+.success-message {
+  background-color: $success-light;
+  color: $success;
+}
+
+.primary-message {
+  background-color: $primary-light;
+  color: $primary;
+}
+
+.success-white-message {
+  background-color: $white;
+  color: $success;
+}

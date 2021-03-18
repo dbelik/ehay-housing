@@ -32,16 +32,6 @@ $navbar-height: 100px;
   box-shadow: none !important;
 }
 
-.success-message {
-  background-color: $success-light;
-  display: inline-block;
-  font-size: $p3;
-  border-radius: 1rem;
-  color: $success;
-  padding: 5px 15px;
-  font-weight: 600;
-}
-
 .ordered-list {
   li {
     margin-bottom: 30px;
@@ -56,6 +46,22 @@ blockquote.quote {
   font-size: 40px;
 }
 
+.rounded-sm {
+  border-radius: 10px !important;
+}
 .rounded-md {
   border-radius: 20px;
+}
+
+.dot {
+  font-size: 4px;
+  margin: 0px 10px;
+}
+
+.fit-two-lines {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
