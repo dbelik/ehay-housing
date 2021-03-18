@@ -182,3 +182,19 @@
     }
   }
 }
+
+#hosts-section {
+    margin-top: 150px;
+
+    &-header {
+        margin-bottom: 45px;
+    }
+
+    .rounded-icon-primary {
+        margin-bottom: 26px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
