@@ -6,7 +6,7 @@
 @import "../components/messages.scss";
 
 #intro-section {
-  height: 560px;
+  height: 590px;
   padding: 0px 10px;
 
   #intro-section-icons {
@@ -73,11 +73,6 @@
 
 #housing-steps-section {
   padding: 145px 0;
-
-  #housing-steps-bg {
-    background: url("/assets/images/pages/home/steps-bg.png") no-repeat center;
-    background-size: contain;
-  }
 
   .housing-steps {
     margin-top: 110px;
@@ -219,16 +214,16 @@
     margin-bottom: 260px;
 
     form {
-      margin-top: -100px;
+      margin-top: -120px;
     }
 
     #intro-section-icons {
-      margin-bottom: 150px !important;
+      margin-bottom: 160px !important;
     }
   }
 
   #intro-bottom-section {
-    padding: 180px 0 62px;
+    padding: 144px 0 62px;
 
     > div:nth-child(2),
     > div:nth-child(3) {
@@ -237,10 +232,34 @@
   }
 
   #housing-steps-section {
-    padding: 77px 0 145px;
+    padding: 77px 0 60px;
+
+    #housing-steps-img {
+      max-width: 700px;
+    }
+
+    #housing-steps-header {
+      margin-bottom: 35px;
+    }
+
+    .housing-steps {
+      margin-top: 58px;
+
+      li {
+        margin-bottom: 19px;
+
+        .rounded-icon {
+          margin: 0px 0px 25px;
+        }
+      }
+    }
+
+    .primary-button {
+      margin: 0px !important;
+    }
   }
 
-  #quote-section  {
+  #quote-section {
     font-size: 14px;
 
     #quote-section-author {
@@ -251,7 +270,7 @@
       margin-bottom: 42px !important;
 
       blockquote {
-        margin-bottom: 7px;;
+        margin-bottom: 7px;
       }
     }
   }

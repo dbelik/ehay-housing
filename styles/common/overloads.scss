@@ -130,3 +130,10 @@ footer#ehay-footer {
     }
   }
 }
+
+// Responsive design
+@media (max-width: 1199px) {
+  h3 {
+    margin-bottom: 11px;
+  }
+}
