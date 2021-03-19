@@ -1,75 +1,52 @@
-import gsap from 'gsap'
+import gsap from "gsap";
 
 function getElements(element) {
-    return {
-        arrow: element.children[0],
-        itemsContainer: element.children[1],
-        items: element.children[1].children[0]
-    }
+  return {
+    arrow: element.children[0],
+    itemsContainer: element.children[1],
+    items: element.children[1].children[0],
+  };
 }
 
-function showDropdown(element, timelineStop, timelineShow) {
-    timelineStop.pause();
-    timelineStop.clear();
-    timelineShow.play();
-
-    const elements = getElements(element);
-
-    timelineShow.to(elements.arrow, {
-        rotate: 180,
-        duration: .1
-    });
-    
-    timelineShow.to(elements.itemsContainer, {
-        display: 'flex',
-        duration: 0,
-    });
-    timelineShow.to(elements.itemsContainer, {
-        height: "auto",
-        duration: .1
-    });
-    timelineShow.to(elements.items, {
-        opacity: 1,
-        duration: .1,
-    });
+function showDropdown(timeline) {
+  timeline.play();
 }
 
-function closeDropdown(element, timelineStop, timelineShow) {
-    timelineShow.pause();
-    timelineShow.clear();
-    timelineStop.play();
-
-    const elements = getElements(element);
-    
-    timelineStop.to(elements.items, {
-        opacity: 0,
-        duration: .1,
-    });
-    timelineStop.to(elements.itemsContainer, {
-        height: "0",
-        duration: .1,
-        paddingTop: "0",
-        paddingBottom: "0",
-    });
-    timelineStop.to(elements.itemsContainer, {
-        display: 'none',
-        duration: 0,
-    });
-    timelineStop.to(elements.arrow, {
-        rotate: 0,
-        duration: .1,
-    });
+function closeDropdown(timeline) {
+  timeline.reverse();
 }
 
-window.addEventListener('load', () => {
-    const elements = document.getElementsByClassName('dropdown-navbar');
-    Array.from(elements).forEach((dropdown) => {
-        const timelineStop = gsap.timeline();
-        const timelineShow = gsap.timeline();
+function initTimeline(timeline, element) {
+  const elements = getElements(element);
+  timeline.to(elements.arrow, {
+    rotate: 180,
+    duration: 0.1,
+  });
 
-        dropdown.addEventListener('mouseenter', () => showDropdown(dropdown, timelineStop, timelineShow));
-        dropdown.addEventListener('mouseleave', () => closeDropdown(dropdown, timelineStop, timelineShow));
-        dropdown.addEventListener('focusin', () => showDropdown(dropdown, timelineStop, timelineShow));
-        dropdown.addEventListener('focusout', () => closeDropdown(dropdown, timelineStop, timelineShow));
-    })
-})
+  timeline.to(elements.itemsContainer, {
+    display: "flex",
+    duration: 0,
+  });
+  timeline.to(elements.itemsContainer, {
+    height: "auto",
+    duration: 0.1,
+  });
+  timeline.to(elements.items, {
+    opacity: 1,
+    duration: 0.1,
+  });
+}
+
+window.addEventListener("load", () => {
+  const elements = document.getElementsByClassName("dropdown-navbar");
+  Array.from(elements).forEach((dropdown) => {
+    const timeline = gsap.timeline();
+    timeline.pause();
+    initTimeline(timeline, dropdown);
+
+    dropdown.addEventListener("mouseenter", () => showDropdown(timeline));
+    dropdown.addEventListener("mouseleave", () => closeDropdown(timeline));
+    dropdown.addEventListener("focusin", () => showDropdown(timeline));
+    dropdown.addEventListener("focusout", () => closeDropdown(timeline));
+  });
+});
