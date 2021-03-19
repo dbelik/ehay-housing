@@ -9,6 +9,15 @@
   color: $white;
 }
 
+::-webkit-scrollbar {
+  width: .75em;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: $black;
+}
+
+
 // Tags
 input,
 a,
