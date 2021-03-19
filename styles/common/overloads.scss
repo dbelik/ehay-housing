@@ -1,14 +1,10 @@
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0;
-}
-
+// Text selection
 ::selection {
   background-color: $primary;
   color: $white;
 }
 
+// Scrollbar
 ::-webkit-scrollbar {
   width: .75em;
 }
@@ -17,8 +13,13 @@
   background-color: $black;
 }
 
-
 // Tags
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+
 input,
 a,
 button {
@@ -114,6 +115,11 @@ footer#ehay-footer {
     margin-top: 100px;
     margin-bottom: 60px;
   }
+}
+
+.dropdown-menu {
+  border: 2px solid $grey;
+  color: $grey;
 }
 
 // Bootstrap
