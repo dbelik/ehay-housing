@@ -1,11 +1,5 @@
-$navbar-height: 100px;
-
 .list-style-none {
   list-style-type: none;
-}
-
-.h-navbar {
-  height: $navbar-height;
 }
 
 .w-screen {
@@ -74,46 +68,6 @@ blockquote.quote {
   outline: none;
 }
 
-.sub-navigation {
-  display: none;
-  height: 0;
-  cursor: default;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  width: max-content;
-  background: $white;
-  border-radius: 20px;
-  box-shadow: 0 1px 10px 4px rgba(21, 37, 72, 0.1);
-  z-index: 5;
-
-  > div {
-    height: 100%;
-    width: 100%;
-    padding: 0 40px;
-    opacity: 0;
-  }
-
-  ul {
-    list-style: none;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    li {
-      margin: 10px 0px;
-      padding: 0px 10px;
-      display: inline-block;
-    }
-
-    h5 {
-      color: $primary;
-    }
-
-    a {
-      color: $black;
-      font-size: 0.9rem;
-    }
-  }
+.border-none {
+  border: none;
 }
