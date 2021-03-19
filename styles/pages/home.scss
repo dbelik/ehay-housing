@@ -6,7 +6,7 @@
 @import "../components/messages.scss";
 
 #intro-section {
-  height: 590px;
+  height: 560px;
   padding: 0px 10px;
 
   #intro-section-icons {
@@ -107,7 +107,8 @@
   }
 
   #our-features-img {
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
   }
 
   #our-features-payment {
@@ -115,7 +116,8 @@
   }
 
   #our-features-payment-img {
-    width: 326px;
+    max-width: 326px;
+    width: 100%;
     margin-right: 95px;
   }
 }
@@ -212,6 +214,7 @@
 @media (max-width: 1199px) {
   #intro-section {
     margin-bottom: 260px;
+    height: 590px;
 
     form {
       margin-top: -120px;
@@ -277,18 +280,30 @@
 
   #our-features {
     margin-top: 86px;
-    padding-top: 80px;
+    padding: 80px 0px 0px;
+
+    #our-features-img {
+      margin: 0px !important;
+    }
 
     .content-container {
-      padding-bottom: 70px;
+      padding: 0px 0px 70px;
     }
 
     #our-features-header {
-      margin-bottom: 35px;
+      margin: 0 0 35px;
     }
 
     #our-features-payment {
-      margin-top: 25px;
+      margin-top: 50px;
+
+      > div:first-child {
+        padding-left: 0 !important;
+      }
+
+      #our-features-payment-img {
+        margin: 0 !important;
+      }
     }
   }
 
