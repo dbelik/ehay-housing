@@ -320,3 +320,89 @@
     height: 385px;
   }
 }
+
+@media (max-width: 767px) {
+  #intro-section {
+    height: 483px;
+
+    form {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    .white-border-button {
+      margin-bottom: 80px;
+    }
+  }
+
+  #intro-bottom-section {
+    padding-top: 161px;
+    padding-bottom: 42px;
+
+    > div {
+      max-width: 350px;
+    }
+
+    > div:nth-child(n + 2) {
+      margin-top: 26px;
+    }
+  }
+
+  #housing-steps-section {
+    padding-top: 58px;
+  }
+
+  #quote-section {
+    padding-bottom: 14px;
+  }
+
+  #our-features {
+    margin-top: 0px;
+
+    #our-features-payment {
+      margin-top: 64px;
+    }
+
+    .content-container {
+      padding-bottom: 42px;
+    }
+  }
+
+  #articles-section {
+    padding-top: 65px;
+
+    .articles {
+      > div:nth-child(1) {
+        height: 495px;
+
+        .article-background {
+          height: 37%;
+        }
+      }
+
+      #article-2 {
+        padding-bottom: 43px;
+      }
+
+      > div:nth-child(n + 2) {
+        height: 402px;
+      }
+    }
+  }
+
+  #outline-section {
+    height: 308px;
+    padding: 0;
+    background-position-x: 39%;
+  }
+}
+
+@media (max-width: 480px) {
+  #our-features-payment > div:first-child {
+    padding: 0px !important;
+  }
+  #our-features-payment-img,
+  #our-features-img {
+    max-width: 280px !important;
+  }
+}

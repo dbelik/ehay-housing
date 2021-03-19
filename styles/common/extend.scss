@@ -71,3 +71,9 @@ blockquote.quote {
 .border-none {
   border: none;
 }
+
+@media (max-width: 767px) {
+  .text-big {
+    font-size: 2rem;
+  }
+}

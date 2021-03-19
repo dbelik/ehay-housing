@@ -53,9 +53,9 @@ body {
 }
 
 @media (min-width: 1200px) {
-    #navbar-items li {
-        opacity: 1 !important;
-    }
+  #navbar-items li {
+    opacity: 1 !important;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -98,5 +98,16 @@ body {
         font-size: $p2;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  $navbar-height: 64px;
+
+  .h-navbar {
+    height: $navbar-height;
+  }
+  body {
+    padding-top: $navbar-height;
   }
 }

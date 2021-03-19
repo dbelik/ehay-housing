@@ -22,3 +22,12 @@
   background-color: $white;
   color: $success;
 }
+
+@media (max-width: 767px) {
+  .primary-message {
+    padding: 1px 10px;
+  }
+  .success-white-message {
+    padding: 5px 21px;
+  }
+}
