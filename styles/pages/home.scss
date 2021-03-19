@@ -394,6 +394,10 @@
     height: 308px;
     padding: 0;
     background-position-x: 39%;
+
+    > div {
+      max-width: 420px !important;
+    }
   }
 }
 

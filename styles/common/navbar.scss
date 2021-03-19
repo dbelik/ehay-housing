@@ -110,4 +110,8 @@ body {
   body {
     padding-top: $navbar-height;
   }
+  #navbar-items {
+    top: $navbar-height;
+    height: calc(100vh - $navbar-height);
+  }
 }
